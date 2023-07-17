@@ -1,0 +1,9 @@
+manifest file error: kubernetes is not able to validate your manifest file due to a syntax error
+imagepullbackoff error:  that means kubernetes has fails to pull the docker image specified in that pod because u have 
+and incorrect name or tag , or the iamge does not exist , access permission
+resource limit errors:
+liveness probe and readiness probe: 
+liveness probe: is use to know went to restart a conatainer, its a healyhy check
+if the liveness probe fails, k8n will know when to automatically recreate the container
+readiness probe: it;s use to knw when the container is ready to start accepting traffic. if it fails
+k8n will stop sending traffic until it passes the check
