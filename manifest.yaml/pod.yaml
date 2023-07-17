@@ -1,0 +1,13 @@
+apiVersion:v1 ##defining the version of the api u are using to create the resource.the yml syntax is a key: value
+kind: Pod  # specifies the kind of k8n resource u want to create, the yml
+metadata:
+  name: mscloud
+  lebals:
+     app: web-app-pod
+    layer: frontend
+    
+spec:
+  containers:              # container is a list
+    - name: dev_container
+      image: nginx
+      
